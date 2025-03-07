@@ -97,10 +97,11 @@ d
 ## Svar på spørsmål.
 
 - Debugging i neovim?
+
 Plugin [nvim-dap](https://github.com/mfussenegger/nvim-dap)
 Debugger Adapter Protocol implementasjon i Neovim.
 
-- Hvilke kommando blir gjørt i lazygit når en ny PR blir åpne i nettleseren.
+- Hvilke kommando blir kjørt i lazygit når en ny PR blir åpne i nettleseren.
 
 I lazygit TUI hvor man ser "local branches" kan man trykke navigere til en branch og trykke o.
 Da vil default nettleser åpne en ny tab med en PR fra din branch inn i main.
