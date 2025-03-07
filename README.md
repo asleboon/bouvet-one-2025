@@ -11,6 +11,7 @@ Presentasjonen er laget med [reveal.js](https://revealjs.com/) og den finner du 
 - [📺 Videoressurser](#videos)
 - [🐙 Github repos](#repos)
 - [⭐️ Andre programmer](#other)
+- [Spørsmål](#questions)
 
 <a name='#kom-i-gang'></a>
 ## ⚡ Kom i gang med Neovim
@@ -49,7 +50,7 @@ nvim
 
 ---
 
-<a name='#config'></a>
+<a name='config'></a>
 ## Config-filer
 
 I repoet finner du mine config filer 🙉
@@ -61,7 +62,7 @@ I repoet finner du mine config filer 🙉
 
 ---
 
-<a name='#videos'></a>
+<a name='videos'></a>
 ## 📺 Videoressurser
 
 Noen gode videoer for å lære mer:
@@ -92,6 +93,7 @@ d
 - [gum](https://github.com/charmbracelet/gum) - terminal inputs
 - [asciinema](https://github.com/asciinema/asciinema) - record terminal session
 
+<a name="questions"></a>
 ## Svar på spørsmål.
 
 - Debugging i neovim?
@@ -99,12 +101,11 @@ Plugin [nvim-dap](https://github.com/mfussenegger/nvim-dap)
 Debugger Adapter Protocol implementasjon i Neovim.
 
 - Hvilke kommando blir gjørt i lazygit når en ny PR blir åpne i nettleseren.
-I lazygit vinduet hvor man ser ulike "branches" kan man trykke på o og åpne default
-nettleser med en ny PR. Den bruker "remote" urlen som er blitt satt opp for repoet og
-kjører kommandoen
 
+I lazygit TUI hvor man ser "local branches" kan man trykke navigere til en branch og trykke o.
+Da vil default nettleser åpne en ny tab med en PR fra din branch inn i main.
+Den bruker "remote" urlen som er blitt satt opp for repoet og kjører kommandoen:
 ```
 bash -c "open https://github.com/asleboon/bouvet-one-2025/compare/devn?expand=1"
 ```
-
 I lazygit blir alle kommandoene vist i vinduet "command log"
