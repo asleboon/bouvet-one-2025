@@ -70,6 +70,7 @@ d
 - [Neovim in 100 seconds](https://www.youtube.com/watch?v=c4OyfL5o7DU)
 - [Vim in 100 seconds](https://www.youtube.com/watch?v=-txKSRn0qeA)
 - [Tmux in 100 seconds](ttps://www.youtube.com/watch?v=vtB1J_zCv8I)
+- [15 Lazygit features in under 15 minutes](https://www.youtube.com/watch?v=CPLdltN7wgE&t=2s)
 - [Kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim)
 
 <a name="repos"></a>
