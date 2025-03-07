@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>VSCode til terminalen</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/css/reveal.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/css/theme/black.css"
+    />
+	<style>
+		.reveal section p {
+			font-size: 0.7em;
+		}
+
+		.reveal section .small {
+			font-size: 0.4em
+		}
+
+		.row {
+			display: flex;
+			align-items: center;
+			justify-content: center
+		}
+
+		.column {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center
+		}
+
+	</style>
+  </head>
+
+  <body>
+		<div class="reveal">
+			<div class="slides">
+			  <section>
+				  <h2>VSCode til terminalen</h2>
+				  <p class=''>Hvordan Neovim, Tmux og Lazygit økte min produktivitet</p>
+				  <p class='small'>av Asle Berge</p>
+				  <div class='column'>
+					<img
+					  src="https://raw.githubusercontent.com/neovim/neovim.github.io/master/logos/neovim-logo-300x87.png"
+					  width="300"
+					/>
+					<img
+					  src="https://raw.githubusercontent.com/tmux/tmux/master/logo/tmux-logo-medium.png"
+					  width="300"
+					/>
+					<img
+					  src="https://user-images.githubusercontent.com/8456633/174470852-339b5011-5800-4bb9-a628-ff230aa8cd4e.png"
+					  width="200"
+					/>
+				  </div>
+			  </section>
+
+			  <section>
+					<img 
+						src="https://preview.redd.it/neovim-is-the-most-desired-ide-according-to-stacoverflow-v0-lobnyihlried1.png?width=1080&crop=smart&auto=webp&s=2de5e671c959cab3fd988a0424874c910eefc418"
+						width="500"
+					/>
+			  </section>
+
+			  <section>
+				  <div class='flex justify-center items-center gap-3'>
+					<img 
+						src="https://imgflip.com/s/meme/Jackie-Chan-WTF.jpg"
+						width="400"
+					/>
+				  </div>
+
+			  </section>
+
+			  <section>
+				  <div class='flex justify-center items-center gap-3'>
+					<img 
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkY1YVcs2kfZA_aQtV8XHxCdtzVCnWTgRfuQ&s"
+						width="400"
+					/>
+				  </div>
+			  </section>
+
+				<section>
+				  <h2>Kort oppsumert</h2>
+				  <ul>
+					  <li>Lærerikt (terminal, core utils, linux)</li>
+					  <li>Gøy!</li>
+					  <li>Neovim er raskt og alt kan konfigureres</li>
+					  <li>Stort økosystem av plugins</li>
+					  <li>Anbefaler kickstart.nvim</li>
+				  </ul>
+				</section>
+
+
+				<section>
+				  <h2>Takk for meg</h2>
+				  <p></p>
+				</section>
+			</div>
+		</div>
+
+    <!--<script src="lib/js/head.min.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/headjs@1.0.3/dist/1.0.0/head.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@3.7.0/js/reveal.min.js"></script>
+
+    <script src="index.js"></script>
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        width: "100%",
+        height: "100%",
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Set default timing of 2 minutes per slide
+        defaultTiming: 120,
+
+        // Display the page number of the current slide
+        slideNumber: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autolaying embedded media (video/audio/iframe)
+        // - null: Media will only autoplay if data-autoplay is present
+        // - true: All media will autoplay, regardless of individual setting
+        // - false: No media will autoplay, regardless of individual setting
+        autoPlayMedia: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: Reveal.navigateNext,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // Hides the address bar on mobile devices
+        hideAddressBar: true,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: true,
+
+        // Transition style
+        transition: "slide", // none/fade/slide/convex/concave/zoom
+
+        // Transition speed
+        transitionSpeed: "default", // default/fast/slow
+
+        // Transition style for full page slide backgrounds
+        backgroundTransition: "fade", // none/fade/slide/convex/concave/zoom
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Parallax background image
+        parallaxBackgroundImage: "", // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+
+        // Parallax background size
+        parallaxBackgroundSize: "", // CSS syntax, e.g. "2100px 900px"
+
+        // Number of pixels to move the parallax background per slide
+        // - Calculated automatically unless specified
+        // - Set to 0 to disable movement along an axis
+        parallaxBackgroundHorizontal: null,
+        parallaxBackgroundVertical: null,
+
+        // The display mode that will be used to show slides
+        display: "block",
+
+        dependencies: [],
+        markdown: {
+          //            renderer: myrenderer,
+          smartypants: true,
+        },
+      });
+      Reveal.configure({
+        // PDF Configurations
+        pdfMaxPagesPerSlide: 1,
+      });
+    </script>
+  </body>
+</html>
+
